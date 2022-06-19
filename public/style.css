@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(100, 186, 170);
+}
+
+textarea {
+  border-width: 4;
+  border-radius: 10px;
+  resize: none;
+  font-family: Georgia, Helvetica, serif;
+  padding: 4px 4px 4px 4px;
+}
+
+textarea:focus {
+  outline: none !important;
+  border-color: lightgray !important;
+  background-color: white !important;
+}
+
+#daysAndTodoHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100%;
+  max-width: 100%;
+
+  /*   padding: 12.5% 12.5% 12.5% 12.5%; */
+}
+
+#daysHolder {
+  display: flex;
+  min-height: 100%;
+  width: 800px;
+  align-items: center;
+  /*   justify-content: center; */
+  /*   margin: 12.5% 12.5% 12.5% 12.5%; */
+  /*   background-color: green; */
+}
+
+#days {
+  /*   width: 100%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* 	justify-content: center; */
+  /* 	align-items: center; */
+  /*   background-color: black; */
+
+  height: 50%;
+}
+
+.two {
+  /*   width: 12%; */
+  width: 120px;
+  height: 240px;
+  padding: 0 4% 40px 4%;
+}
+
+.input {
+  height: 50%;
+  width: 100%;
+  margin: 0 0% 12% 0%;
+}
+
+.top {
+  background-color: rgb(233, 222, 182);
+  border-color: rgb(157, 161, 125);
+  color: rgb(157, 161, 125);
+}
+
+.bottom {
+  background-color: rgb(100, 186, 170);
+  border-color: rgb(79, 105, 94);
+  color: rgb(79, 105, 94);
+}
+
+#todo {
+  height: 600px;
+  width: 300px;
+  /*   max-width: 300px; */
+
+  background-color: rgb(233, 222, 182);
+  border-color: rgb(157, 161, 125);
+  color: rgb(157, 161, 125);
+}
+
+@media only screen and (max-width: 396px) {
+  .two {
+    width: 115px;
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  #days {
+    justify-content: center;
+  }
+
+  #daysAndTodoHolder {
+    padding: 12.5% 12.5% 12.5% 12.5%;
+  }
+}
